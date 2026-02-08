@@ -1,0 +1,22 @@
+# Gradle
+build/
+.gradle/
+gradle/wrapper/dists/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# macOS
+.DS_Store
+
+# Custom sandbox directories
+idea-config/
+idea-system/
+
+# Other
+*.log
+*.class

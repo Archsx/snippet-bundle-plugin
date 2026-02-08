@@ -1,0 +1,51 @@
+<idea-plugin>
+    <id>com.github.archsx.snippetbundle</id>
+    <name>SnippetBundle</name>
+
+    <vendor email="archsx@users.noreply.github.com"
+            url="https://github.com/Archsx">
+        Archsx
+    </vendor>
+
+    <description><![CDATA[
+        <p>
+            SnippetBundle helps you bundle selected project files into a single Markdown text
+            (with safe fenced code blocks), so you can paste it into LLM web chats or other external tools easily.
+        </p>
+
+        <p><b>Typical workflow</b></p>
+        <ol>
+            <li>Drag & drop files/folders into the tool window</li>
+            <li>Click <i>Copy Files (Markdown)</i> to copy everything to clipboard</li>
+        </ol>
+
+        <p><b>Features</b></p>
+        <ul>
+            <li>Tool window to manage selected files</li>
+            <li>Drag & drop support</li>
+            <li>Markdown output with language fences and safe-fence handling</li>
+            <li>Default ignore rules and binary filtering</li>
+            <li>Clear all selections with one click</li>
+        </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <h3>0.1.1</h3>
+        <ul>
+            <li>Initial public release</li>
+            <li>Tool window with drag & drop support</li>
+            <li>Copy selected files as Markdown</li>
+        </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="SnippetBundle"
+                anchor="right"
+                secondary="true"
+                factoryClass="com.github.archsx.snippetbundle.toolwindow.MyToolWindowFactory"/>
+    </extensions>
+
+</idea-plugin>
